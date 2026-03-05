@@ -1,0 +1,56 @@
+{
+  "drivers": [
+    {
+      "id": "max_verstappen",
+      "name": "Max Verstappen",
+      "team": "RED BULL",
+      "number": 1,
+      "points": 437,
+      "wins": 9,
+      "country": "Netherlands",
+      "bio": "Max Emilian Verstappen is a Belgian-Dutch racing driver competing in Formula One for Red Bull Racing. He is a three-time Formula One World Champion, having won the championships in 2021, 2022, and 2023. Verstappen is the son of former Formula One driver Jos Verstappen.",
+      "image_url": "https://media.licdn.com/dms/image/D4D12AQE-w8-Z4Z8C1g/article-cover_image-shrink_600_2000/0/1697287854878?e=2147483647&v=beta&t=abc123",
+      "birth_date": "1997-12-30",
+      "height": "1.80 m"
+    },
+    {
+      "id": "lando_norris",
+      "name": "Lando Norris",
+      "team": "McLAREN",
+      "number": 4,
+      "points": 374,
+      "wins": 4,
+      "country": "United Kingdom",
+      "bio": "Lando Norris is a British racing driver competing in Formula One for McLaren. Known for his smooth driving style and consistency, Norris has established himself as one of the top talents in Formula One.",
+      "image_url": "https://media.licdn.com/dms/image/C4D03AQFsM5Jv5n5Xbw/profile-displayphoto-shrink_200_200/0/1517940987848?e=2147483647&v=beta&t=xyz789",
+      "birth_date": "1999-11-13",
+      "height": "1.80 m"
+    },
+    {
+      "id": "charles_leclerc",
+      "name": "Charles Leclerc",
+      "team": "FERRARI",
+      "number": 16,
+      "points": 356,
+      "wins": 3,
+      "country": "Monaco",
+      "bio": "Charles Leclerc is a Monégasque racing driver competing in Formula One for Ferrari. He is known for his raw speed and determination on track, making him one of the most exciting drivers on the grid.",
+      "image_url": "https://media.licdn.com/dms/image/C4E03AQGq7Z7RQZ1Z2Q/profile-displayphoto-shrink_200_200/0/1517940987850?e=2147483647&v=beta&t=abc456",
+      "birth_date": "1997-07-16",
+      "height": "1.78 m"
+    },
+    {
+      "id": "oscar_piastri",
+      "name": "Oscar Piastri",
+      "team": "McLAREN",
+      "number": 81,
+      "points": 292,
+      "wins": 2,
+      "country": "Australia",
+      "bio": "Oscar Piastri is an Australian racing driver competing in Formula One for McLaren. He is the reigning F2 Champion and has quickly established himself as a rising star in Formula One.",
+      "image_url": "https://media.licdn.com/dms/image/D4D03AQF6Z8Z8Z8Z8Z/profile-displayphoto-shrink_200_200/0/1517940987852?e=2147483647&v=beta&t=def789",
+      "birth_date": "2001-03-06",
+      "height": "1.81 m"
+    }
+  ]
+}

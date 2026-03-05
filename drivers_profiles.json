@@ -1,0 +1,142 @@
+{
+  "max_verstappen": {
+    "birth_date": "1997-12-30",
+    "nationality": "Dutch",
+    "height": "180 cm",
+    "code": "VER",
+    "bio": "Max Verstappen is a Dutch racing driver currently competing for Red Bull Racing. He is a three-time Formula 1 World Champion (2021, 2022, 2023) and one of the most dominant drivers in the sport's modern era. Known for his aggressive driving style and exceptional car control, Verstappen has broken multiple records including most wins in a season."
+  },
+  "norris": {
+    "birth_date": "1999-11-13",
+    "nationality": "British",
+    "height": "170 cm",
+    "code": "NOR",
+    "bio": "Lando Norris is a British racing driver for McLaren. A rising star in Formula 1, he joined the grid in 2019 and has quickly become known for his smooth driving technique and consistency. Norris is also an accomplished esports competitor and streams gaming content regularly."
+  },
+  "leclerc": {
+    "birth_date": "1997-10-16",
+    "nationality": "Monegasque",
+    "height": "178 cm",
+    "code": "LEC",
+    "bio": "Charles Leclerc is a Monegasque racing driver for Scuderia Ferrari. Known for his raw pace and fearless driving, Leclerc is considered one of the most talented drivers on the grid. He races for his childhood dream team Ferrari and is passionate about delivering success for the Scuderia."
+  },
+  "piastri": {
+    "birth_date": "2001-04-06",
+    "nationality": "Australian",
+    "height": "178 cm",
+    "code": "PIA",
+    "bio": "Oscar Piastri is an Australian racing driver competing for McLaren. After an unprecedented run of winning three consecutive junior championships (Formula Renault, F3, and F2), he made his highly anticipated F1 debut in 2023. Known for his exceptional race craft, incredibly calm demeanor under pressure, and rapid adaptability, Piastri secured his maiden Grand Prix victory in 2024."
+  },
+  "hamilton": {
+    "birth_date": "1985-01-07",
+    "nationality": "British",
+    "height": "174 cm",
+    "code": "HAM",
+    "bio": "Lewis Hamilton is a British racing driver and a seven-time Formula 1 World Champion. Statistically one of the most successful drivers in the history of the sport, he holds the records for the most wins, pole positions, and podium finishes. He currently drives for Mercedes."
+  },
+  "sainz": {
+    "birth_date": "1994-09-01",
+    "nationality": "Spanish",
+    "height": "178 cm",
+    "code": "SAI",
+    "bio": "Carlos Sainz is a Spanish racing driver competing for Scuderia Ferrari. Known for his high racing IQ, strategic awareness, and smooth driving style, Sainz has proven to be a highly consistent and intelligent competitor capable of winning races."
+  },
+  "russell": {
+    "birth_date": "1998-02-15",
+    "nationality": "British",
+    "height": "185 cm",
+    "code": "RUS",
+    "bio": "George Russell is a British racing driver competing for Mercedes. He earned the nickname 'Mr. Saturday' early in his career for his exceptional qualifying performances and is widely seen as the future leader of the Mercedes team."
+  },
+  "perez": {
+    "birth_date": "1990-01-26",
+    "nationality": "Mexican",
+    "height": "173 cm",
+    "code": "PER",
+    "bio": "Sergio 'Checo' Perez is a Mexican racing driver competing for Red Bull Racing. He is renowned for his masterful tire management and his ability to fiercely defend his position on track, earning him the nickname 'Minister of Defense'."
+  },
+  "alonso": {
+    "birth_date": "1981-07-29",
+    "nationality": "Spanish",
+    "height": "171 cm",
+    "code": "ALO",
+    "bio": "Fernando Alonso is a Spanish racing driver and a two-time Formula 1 World Champion. Currently driving for Aston Martin, his longevity in the sport is unmatched, and he remains one of the most relentless and tactically brilliant drivers on the grid."
+  },
+  "stroll": {
+    "birth_date": "1998-10-29",
+    "nationality": "Canadian",
+    "height": "182 cm",
+    "code": "STR",
+    "bio": "Lance Stroll is a Canadian racing driver competing for Aston Martin. He made his Formula 1 debut in 2017 and is known for his excellent performances in wet weather conditions and strong opening laps."
+  },
+  "tsunoda": {
+    "birth_date": "2000-05-11",
+    "nationality": "Japanese",
+    "height": "159 cm",
+    "code": "TSU",
+    "bio": "Yuki Tsunoda is a Japanese racing driver competing for RB (Visa Cash App RB). Known for his aggressive raw pace and highly passionate team radio communications, he has grown into a consistent points scorer."
+  },
+  "ricciardo": {
+    "birth_date": "1989-07-01",
+    "nationality": "Australian",
+    "height": "180 cm",
+    "code": "RIC",
+    "bio": "Daniel Ricciardo is an Australian racing driver known as the 'Honey Badger'. A highly popular figure in the paddock, he is famous for his signature late-braking overtaking maneuvers and his eight Grand Prix victories."
+  },
+  "hulkenberg": {
+    "birth_date": "1987-08-19",
+    "nationality": "German",
+    "height": "184 cm",
+    "code": "HUL",
+    "bio": "Nico Hulkenberg is a German racing driver competing for Haas. He is highly regarded in the paddock for his exceptional qualifying pace and ability to consistently extract the maximum performance from midfield machinery."
+  },
+  "magnussen": {
+    "birth_date": "1992-10-05",
+    "nationality": "Danish",
+    "height": "174 cm",
+    "code": "MAG",
+    "bio": "Kevin Magnussen is a Danish racing driver for Haas. Known for his elbows-out, fiercely aggressive defending and uncompromising driving style, he is a veteran of the midfield battles."
+  },
+  "gasly": {
+    "birth_date": "1996-02-07",
+    "nationality": "French",
+    "height": "177 cm",
+    "code": "GAS",
+    "bio": "Pierre Gasly is a French racing driver competing for Alpine. A Grand Prix winner, Gasly is known for his emotional resilience and his ability to lead midfield teams to strong results."
+  },
+  "ocon": {
+    "birth_date": "1996-09-17",
+    "nationality": "French",
+    "height": "186 cm",
+    "code": "OCO",
+    "bio": "Esteban Ocon is a French racing driver competing for Alpine. He is a Grand Prix winner known for his strong defensive driving skills and consistency over long race stints."
+  },
+  "albon": {
+    "birth_date": "1996-03-23",
+    "nationality": "Thai",
+    "height": "186 cm",
+    "code": "ALB",
+    "bio": "Alexander Albon is a Thai-British racing driver competing for Williams. He has established himself as the clear team leader at Williams, regularly performing 'tire whisperer' strategies to secure crucial points."
+  },
+  "sargeant": {
+    "birth_date": "2000-12-31",
+    "nationality": "American",
+    "height": "181 cm",
+    "code": "SAR",
+    "bio": "Logan Sargeant is an American racing driver. Making his debut for Williams in 2023, he became the first American to score a point in Formula 1 in exactly 30 years."
+  },
+  "bottas": {
+    "birth_date": "1989-08-28",
+    "nationality": "Finnish",
+    "height": "173 cm",
+    "code": "BOT",
+    "bio": "Valtteri Bottas is a Finnish racing driver currently with Kick Sauber. A 10-time Grand Prix winner from his time at Mercedes, Bottas brings immense experience, strong qualifying pace, and a laid-back off-track persona to the grid."
+  },
+  "zhou": {
+    "birth_date": "1999-05-30",
+    "nationality": "Chinese",
+    "height": "176 cm",
+    "code": "ZHO",
+    "bio": "Zhou Guanyu is a Chinese racing driver competing for Kick Sauber. He made history in 2022 as the first full-time Chinese driver to race in Formula 1 and is known for his clean driving style and reliable race finishes."
+  }
+}

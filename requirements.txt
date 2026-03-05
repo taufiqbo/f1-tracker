@@ -1,0 +1,7 @@
+streamlit
+pandas
+requests
+pytz
+streamlit-autorefresh
+joblib
+scikit-learn
