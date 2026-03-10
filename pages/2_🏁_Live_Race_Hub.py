@@ -630,8 +630,8 @@ def main():
         if standings_data:
             max_points = float(standings_data[0].get("points", 1))
             
-            for standing in standings_data[:10]:  # Top 10 teams
-                position = standing.get("position", "-")
+            for i, standing in enumerate(standings_data):  
+                position = str(i + 1)  # Forces perfect numbering 1, 2, 3... 11
                 constructor = standing.get("Constructor", {})
                 team_name = constructor.get("name", "Unknown")
                 points = standing.get("points", "0")

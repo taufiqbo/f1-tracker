@@ -35,11 +35,13 @@ def get_img_as_base64(file_path):
 PREDS_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "predictions.json")
 
 DRIVERS = [
-    "Select Driver...", "Max Verstappen", "Lando Norris", "Charles Leclerc", 
-    "Carlos Sainz", "Lewis Hamilton", "George Russell", "Oscar Piastri", 
-    "Fernando Alonso", "Lance Stroll", "Yuki Tsunoda", "Daniel Ricciardo", 
-    "Alex Albon", "Logan Sargeant", "Esteban Ocon", "Pierre Gasly", 
-    "Valtteri Bottas", "Zhou Guanyu", "Nico Hulkenberg", "Kevin Magnussen"
+    "Select Driver...", 
+    "Max Verstappen", "Lando Norris", "Charles Leclerc", "Carlos Sainz", 
+    "Lewis Hamilton", "George Russell", "Oscar Piastri", "Fernando Alonso", 
+    "Lance Stroll", "Yuki Tsunoda", "Alex Albon", "Esteban Ocon", 
+    "Pierre Gasly", "Nico Hulkenberg", "Kevin Magnussen", "Liam Lawson", 
+    "Kimi Antonelli", "Oliver Bearman", "Jack Doohan", "Gabriel Bortoleto", 
+    "Franco Colapinto", "Isack Hadjar", "Arvid Lindblad"
 ]
 
 def load_predictions():
