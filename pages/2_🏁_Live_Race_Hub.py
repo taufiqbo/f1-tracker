@@ -6,6 +6,18 @@ import time
 import base64
 import os
 from streamlit_autorefresh import st_autorefresh
+
+# A dictionary linking the API's 'circuitId' to a live image URL
+# A dictionary linking the API's 'circuitId' to a live image URL
+# A dictionary linking the API's 'circuitId' to a live image URL
+TRACK_MAPS = {
+    "albert_park": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Albert_Lake_Park_Street_Circuit_in_Melbourne%2C_Australia.svg",
+    "shanghai": "https://upload.wikimedia.org/wikipedia/commons/1/14/Shanghai_International_Racing_Circuit_track_map.svg",
+    "bahrain": "https://upload.wikimedia.org/wikipedia/commons/2/29/Bahrain_International_Circuit--Grand_Prix_Layout.svg",
+    "jeddah": "https://upload.wikimedia.org/wikipedia/commons/8/87/Jeddah_Street_Circuit_2021.svg",
+    "suzuka": "https://upload.wikimedia.org/wikipedia/commons/1/14/Suzuka_circuit_map--2005.svg",
+    "miami": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Miami_International_Autodrome_2022_layout.svg",
+}
 # -----------------------------
 # IMAGE HELPER FUNCTION
 # -----------------------------
@@ -434,6 +446,20 @@ def get_next_race():
             "date": race.get("date", "-"),
             "time": race.get("time", "00:00:00Z"),
             "circuit": race.get("Circuit", {}).get("circuitName", "Unknown"),
+            "circuitId": race.get("Circuit", {}).get("circuitId", "Unknown"), # <-- WE ADDED THIS
+            "location": race.get("Circuit", {}).get("Location", {}),
+            "round": race.get("round", "1")
+        }
+    except Exception as e:
+        st.error(f"Error fetching race data: {e}")
+        return None
+        
+        race = races[0]
+        return {
+            "name": race.get("raceName", "Unknown"),
+            "date": race.get("date", "-"),
+            "time": race.get("time", "00:00:00Z"),
+            "circuit": race.get("Circuit", {}).get("circuitName", "Unknown"),
             "location": race.get("Circuit", {}).get("Location", {}),
             "round": race.get("round", "1")
         }
@@ -583,6 +609,8 @@ def main():
     
     # Two-column layout
     col1, col2 = st.columns([1, 1])
+
+
     
     # LEFT COLUMN - Race Information
     with col1:
@@ -602,15 +630,11 @@ def main():
             <span class="info-label">🌍 Location</span>
             <span class="info-value">{race_data["location"].get("locality", "Unknown")}, {race_data["location"].get("country", "Unknown")}</span>
         </div>
-        <div class="info-row">
+      <div class="info-row">
             <span class="info-label">📅 Date</span>
             <span class="info-value">{race_datetime_local.strftime("%A, %d %B %Y")}</span>
         </div>
         <div class="info-row">
-            <span class="info-label">⏰ Time (MYT)</span>
-            <span class="info-value">{race_datetime_local.strftime("%I:%M %p")}</span>
-        </div>
-         <div class="info-row">
             <span class="info-label">GB Time (UK)</span>
             <span class="info-value">{race_datetime_uk.strftime("%I:%M %p %Z")}</span>
         </div>
@@ -621,7 +645,21 @@ def main():
         ''', unsafe_allow_html=True)
         
         st.markdown('</div>', unsafe_allow_html=True)
-    
+
+        # THE TRACK MAP LOGIC (Bypasses Wikipedia's bot blocker!)
+  # THE TRACK MAP LOGIC (Using SVGs with a Dark Mode Invert Filter!)
+        circuit_id = race_data.get('circuitId', '')
+
+        if circuit_id in TRACK_MAPS:
+            st.markdown(f'''
+            <div style="text-align: center; padding: 20px; background: rgba(0,0,0,0.2); border-radius: 18px; margin-top: 15px; border: 1px solid #30363D;">
+                <p style="color: #8B949E; font-size: 14px; font-weight: 600; letter-spacing: 2px; margin-bottom: 15px;">🗺️ OFFICIAL TRACK LAYOUT</p>
+                <img src="{TRACK_MAPS[circuit_id]}" style="width: 100%; max-width: 500px; filter: invert(1) brightness(2) drop-shadow(0 0 5px rgba(255,255,255,0.2));">
+            </div>
+            ''', unsafe_allow_html=True)
+        else:
+            st.info("🗺️ Track map coming soon for this circuit!")
+            
     # RIGHT COLUMN - Constructor Standings
     with col2:
         st.markdown('<div class="info-card">', unsafe_allow_html=True)
