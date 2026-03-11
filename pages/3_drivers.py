@@ -670,7 +670,7 @@ def display_driver_profile(standing):
 def main():
     # Header
     st.markdown('<div class="main-title"> DRIVER CHAMPIONSHIP</div>', unsafe_allow_html=True)
-    st.markdown('<div class="subtitle">2025 Formula 1 World Championship Standings</div>', unsafe_allow_html=True)
+    st.markdown('<div class="subtitle">2026 Formula 1 World Championship Standings</div>', unsafe_allow_html=True)
     
     # Load favorites
     favorites = load_favorites()
@@ -733,7 +733,7 @@ def display_driver_standings():
     
     # Header
     st.markdown('<div class="main-title"> DRIVER CHAMPIONSHIP</div>', unsafe_allow_html=True)
-    st.markdown('<div class="subtitle">2025 Formula 1 World Championship Standings</div>', unsafe_allow_html=True)
+    st.markdown('<div class="subtitle">2026 Formula 1 World Championship Standings</div>', unsafe_allow_html=True)
     
     # Load favorites
     favorites = load_favorites()
@@ -805,7 +805,7 @@ def display_driver_standings():
         # Check if favorite
         is_favorite = (favorite_driver and favorite_driver in full_name)
         favorite_class = "favorite-driver" if is_favorite else ""
-        position_class = f"position-{position}" if int(position) <= 3 else ""
+        position_class = f"position-{position}" if str(position).isdigit() and int(position) <= 3 else ""
         
         # Calculate bar width
         bar_width = (float(points) / max_points) * 100
